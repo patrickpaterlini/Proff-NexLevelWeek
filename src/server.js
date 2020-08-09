@@ -5,7 +5,8 @@ const server = express()
 const { 
     pageLanding, 
     pageStudy, 
-    pageGiveClasses, 
+    pageGiveClasses,
+    pageTeacherRegister,
     saveClasses 
 } = require('./pages')
 
@@ -29,6 +30,8 @@ server
 .get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
+.get("/teacher-register", pageTeacherRegister)
 .post("/save-classes", saveClasses)
+
 // start do servidor
 .listen(5500)

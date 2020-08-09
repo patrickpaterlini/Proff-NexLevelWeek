@@ -6,6 +6,10 @@ function pageLanding(req, res) {
     return res.render("index.html")
 }
 
+function pageTeacherRegister(req, res) {
+    return res.render("teacher-register.html")
+}
+
 async function pageStudy(req, res) {
     const filters = req.query
 
@@ -94,5 +98,6 @@ module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClasses,
+    pageTeacherRegister,
     saveClasses
 }
