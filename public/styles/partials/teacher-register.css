@@ -1,0 +1,12 @@
+.teacher-container {
+    background: var(--color-primary);
+    height: 100vh;
+    width: 100%;
+}
+
+.teacher-container div {
+    background-image: url(/public/images/success-background.svg);
+    width: 200px;
+    height: 200px;
+
+}
